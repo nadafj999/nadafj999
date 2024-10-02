@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment Portfolio Tracker</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container ">
+        <div class="row">
+            <div class="col -6">
+                <div class="card mx-auto col-7 border-black mt-5">
+                    <div class="card-header bg-warning d-flex">
+                        <img src="investment_logo.png" class="img-fluid col-3" alt="">
+                        <h1 class="card-title text-center pt-3 ">Investment Portfolio Tracker</h1>
+                    </div>
+
+                    <div class="card-body">
+                        <div class="card-text text-center">
+                            <FORM id="investment-form">
+                                <input type="text" placeholder="Investment Name" class="col-11 p-2 m-2"
+                                    id="investment-name" required>
+                                <input type="number" placeholder="Amount ($)" class="col-11 p-2 m-2"
+                                    id="investment-amount" required>
+                                <input type="number" placeholder="Current  Value ($)" class="col-11 p-2 m-2"
+                                    id="investment-value" required>
+                                <input type="number" placeholder="Quantity" class="col-6 p-2 mt-2"
+                                    id="quantity" required>
+                                <button class="btn btn-success col-5 p-2 mt-0" type="submit">Add Investment</button>
+                            </FORM>
+                            <div class="table-responsive col-11 mx-auto mt-2">
+                                <table class="table table-gray table-striped" id="investment-table">
+                                    <thead id="thead"  class="border">
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Amount ($)</th>
+                                            <th>Current  Value ($)</th>
+                                            <th>Quantity</th>
+                                            <th>Gain/Loss ($)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+                            </div>
+                            <h2 class="text-dark" id="total-value">Total Portfolio Value : $0 </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+<script src="bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+
+</html>
